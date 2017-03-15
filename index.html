@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>纯css3实现栏目三等平均分配</title>
+    <style type="text/css">
+    #nav{
+        display:flex;
+        display: -webkit-flex;
+        width: 200px;
+        background: blue;
+        height: 200px;
+        float: left;
+        margin:10px;
+        justify-content:flex-start;
+    }
+    #box1{
+        background: red;
+        width: 50px;
+        height: 50px;
+    }
+    #nav2{
+        display: flex;
+        display: -webkit-flex;
+        width: 200px;
+        float: left;
+        margin:10px;
+        background: blue;
+        height: 200px;
+        justify-content:center;
+    }
+    #box2{
+        background: red;
+        width: 50px;
+        height: 50px;
+    }
+    #nav3{
+        display: flex;
+        display: -webkit-flex;
+        width: 200px;
+        float: left;
+        margin:10px;
+        background: blue;
+        height: 200px;
+        justify-content:flex-end;
+   }
+  .box3{
+        background: red;
+        width: 50px;
+        height: 50px;
+
+   }
+   #nav4{
+        display: flex;;
+        display: -webkit-flex;
+        width: 200px;
+        height: 200px;
+        background: blue;
+        float: left;
+        margin:10px;
+        align-items:center;
+   }
+.box4{
+    width: 50px;
+    height: 50px;
+    background: red;
+   
+}
+#nav5{
+        display: flex;
+        display: -webkit-flex;
+        width: 200px;
+        height: 200px;
+        background: blue;
+        float: left;
+        margin:10px;
+        align-items:center;
+        justify-content:center;
+
+   }
+.box5{
+    width: 50px;
+    height: 50px;
+    background: red;
+   
+}
+#nav6{
+        display: flex;
+        display: -webkit-flex;
+        width: 200px;
+        height: 200px;
+        background: blue;
+        float: left;
+        margin:10px;
+        justify-content:flex-end;
+        align-items:center;
+   }
+.box6{
+    width: 50px;
+    height: 50px;
+    background: red;
+   
+}
+#nav7{
+        display: flex;
+        display: -webkit-flex;
+        width: 200px;
+        height: 200px;
+        background: blue;
+        float: left;
+        margin:10px;
+        justify-content:flex-start;
+        align-items:flex-end;
+   }
+.box7{
+    width: 50px;
+    height: 50px;
+    background: red;
+   
+}
+#nav8{
+        display: flex;
+        display: -webkit-flex;
+        width: 200px;
+        height: 200px;
+        background: blue;
+        float: left;
+        margin:10px;
+        justify-content:center;
+        align-items:flex-end;
+   }
+.box8{
+    width: 50px;
+    height: 50px;
+    background: red;
+   
+}
+#nav9{
+        display: flex;
+        display: -webkit-flex;
+        width: 200px;
+        height: 200px;
+        background: blue;
+        float: left;
+        margin:10px;
+        justify-content:flex-end;
+        align-items:flex-end;
+   }
+.box9{
+    width: 50px;
+    height: 50px;
+    background: red;
+   
+}
+#nav10{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    justify-content:space-between;
+   }
+.box10{
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+
+#nav11{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    flex-direction:column;
+    justify-content:space-between;
+   }
+.box11{
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+#nav12{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+   }
+.box12{
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+#nav13{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+   }
+.box13{
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+#nav13 div:nth-child(2){
+    align-self:center;
+}   
+
+#nav14{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    justify-content:space-between;
+   }
+.box14{
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+#nav14 div:nth-child(2){
+    align-self:flex-end;
+}
+ 
+
+#nav15{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    justify-content:space-between;
+   }
+.box15{
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+#nav15 div:nth-child(2){
+    align-self:center;
+}
+#nav15 div:nth-child(3){
+    align-self:flex-end;
+}
+#nav16{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+.box16{
+    width: 60px;
+    height: 60px;
+    background: red;
+
+}
+
+#nav17{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    justify-content:space-between;
+}
+.column{
+/*    background: yellow;*/
+    display: flex;
+    display: -webkit-flex;
+    flex-basis:1;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.box17{
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+#nav18{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    justify-content:space-between;
+
+}
+.column{
+    flex-basis:100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.box18{
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+#nav19{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    flex-wrap:wrap;
+    align-content:space-between;
+    justify-content:space-between;
+
+}
+.box19{
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+#nav20{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-content:space-between;
+    justify-content:space-between;
+}
+.box20{
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+#nav21{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    flex-wrap:wrap;
+
+}
+.row{
+    flex-basis:100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content:space-between;
+}
+.row:nth-child(2){
+  justify-content: center;
+}
+
+.row:nth-child(3){
+  justify-content: space-between;
+  align-items:flex-end;
+}
+.box21{
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+#nav22{
+    display: flex;
+    display: -webkit-flex;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+    margin:10px;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:baseline;
+}
+.box22{
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+#nav23{
+    width: 100%;
+    height:200px;
+    background: red;
+    display: flex;
+    display: -webkit-flex;
+}
+.box23{
+    flex:1;
+}
+.boxOne{
+    background: #000;
+}
+.boxTwo{
+    background: yellow;
+}
+.boxThree{
+    background: #890;
+}
+#nav24{
+    width: 100%;
+    height:200px;
+    background: red;
+    display: flex;
+    margin-top: 20px;
+    display: -webkit-flex;
+}
+.box24{
+    flex:1;
+}
+.full1{
+    background: yellow;
+    flex:0 0 60%;
+}
+.full2{
+    background: green;
+}
+#nav25{
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    margin-top: 10px;
+      flex-direction: column;
+}
+#nav25 nav,#nav25 footer{
+    flex:1;
+    height: 50px;
+    background: #000;
+}
+#nav25 section{
+    display: flex;
+    display: -webkit-flex;
+    flex:1;
+    background: #ccc;
+    height: 300px;
+}
+.main{
+    display: flex;
+    display: -webkit-flex;
+    flex:1;
+    background: #212;
+}
+.sliderLeft,.sliderRight{
+    flex:0 0 200px;
+    background: #908;     
+}
+.sliderLeft{
+    background: #689;
+}
+@media (max-width: 768px) {
+   #nav25 section {
+    flex-direction: column;
+    flex: 1;
+  }
+ .sliderLeft,.sliderRight, #nav25 section {
+    flex: auto;
+  }
+}
+.InputAddOn {
+  display: flex;
+}
+
+.InputAddOn-field {
+  flex: 1;
+}
+#nav26{
+    display: flex;
+    display: -webkit-flex;
+     width: 100%;
+    background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+.box26{
+  box-sizing: border-box;
+  background-color: white;
+  flex: 0 0 20%;
+  height: 50px;
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+    <div id="nav">
+        <div id="box1">1</div>
+    </div>
+    <div id="nav2">
+        <div id="box2">2</div>
+    </div>
+    <div id="nav3">
+        <div class="box3">3</div>
+    </div>
+    <div id="nav4">
+        <div class="box4">4</div>
+    </div>
+    <div id="nav5">
+        <div class="box5">5</div>
+    </div>
+    <div id="nav6">
+        <div class="box6">6</div>
+    </div>
+    <div id="nav7">
+        <div class="box7">7</div>
+    </div>
+    <div id="nav8">
+        <div class="box8">8</div>
+    </div>
+    <div id="nav9">
+        <div class="box9">9</div>
+    </div>
+    <div id="nav10">
+        <div class="box10">10</div>
+        <div class="box10">10</div>
+    </div>
+    <div id="nav11">
+        <div class="box11">11</div>
+        <div class="box11">11</div>
+    </div>
+    <div id="nav12">
+        <div class="box12">12</div>
+        <div class="box12">12</div>
+    </div>
+    <div id="nav13">
+        <div class="box13">13</div>
+        <div class="box13">13</div>
+    </div>
+    <div id="nav14">
+        <div class="box13">14</div>
+        <div class="box13">14</div>
+    </div>
+    <div id="nav15">
+        <div class="box15">15</div>
+        <div class="box15">15</div>
+        <div class="box15">15</div>
+    </div>
+    <div id="nav16">
+        <div class="box16">16</div>
+        <div class="box16">16</div>
+        <div class="box16">16</div>
+        <div class="box16">16</div>
+    </div>
+    <div id="nav17">
+        <div class="column">
+            <div class="box17">17</div>
+            <div class="box17">17</div>
+        </div>
+        <div class="column">
+            <div class="box17">17</div>
+            <div class="box17">17</div>
+        </div>
+    </div>
+    <div id="nav18">
+        <div class="column">
+            <div class="box18">18</div>
+            <div class="box18">18</div>
+        </div>
+        <div class="column">
+            <div class="box18">18</div>
+            <div class="box18">18</div>
+        </div>
+        <div class="column">
+            <div class="box18">18</div>
+            <div class="box18">18</div>
+        </div>
+    </div>
+    <div id="nav19">
+        <div class="box19">19</div>
+        <div class="box19">19</div>
+        <div class="box19">19</div>
+        <div class="box19">19</div>
+        <div class="box19">19</div>
+        <div class="box19">19</div>
+    </div>
+    <div id="nav20">
+        <div class="box20">20</div>
+        <div class="box20">20</div>
+        <div class="box20">20</div>
+        <div class="box20">20</div>
+        <div class="box20">20</div>
+        <div class="box20">20</div>
+    </div>
+    <div id="nav21">
+        <div class="row">
+            <div class="box21">21</div>
+            <div class="box21">21</div>
+            <div class="box21">21</div>
+        </div>
+        <div class="row">
+            <div class="box21">21</div>
+        </div>
+        <div class="row">
+            <div class="box21">21</div>
+            <div class="box21">21</div>
+        </div>
+    </div>
+    <div id="nav22">
+        <div class="box22">22</div>
+        <div class="box22">22</div>
+        <div class="box22">22</div>
+        <div class="box22">22</div>
+        <div class="box22">22</div>
+        <div class="box22">22</div>
+        <div class="box22">22</div>
+        <div class="box22">22</div>
+        <div class="box22">22</div>
+    </div>
+    <div id="nav23">
+        <div class="box23 boxOne">23</div>
+        <div class="box23 boxTwo">23</div>
+        <div class="box23 boxThree">23</div>
+    </div>
+    <div id="nav24">
+        <div class="box24 full1">24</div>
+        <div class="box24 full2">24</div>
+        <div class="box24 full3">24</div>
+    </div>
+    <div id="nav25">
+        <nav></nav>
+        <section>
+            <div class="sliderLeft"></div>
+            <div class="main"></div>
+            <div class="sliderRight"></div>
+        </section>
+        <footer></footer>
+    </div>
+    <div class="InputAddOn">
+        <span class="InputAddOn-item">tupuaskfsdfsd</span>
+        <input class="InputAddOn-field">
+        <button class="InputAddOn-item">askfhsdjfn</button>
+    </div>
+    <div id="nav26">
+        <div class="box26">26</div>
+        <div class="box26">26</div>
+        <div class="box26">26</div>
+        <div class="box26">26</div>
+        <div class="box26">26</div>
+        <div class="box26">26</div>
+    </div>
+</body>
+</html>
